@@ -2,7 +2,7 @@ import http from 'node:http';
 import { createBareServer } from '@tomphttp/bare-server-node';
 import { HttpsProxyAgent } from 'https-proxy-agent'; // Ensure correct import
 
-const httpProxyAgent = new HttpsProxyAgent('https://e3z4acki-gv85bq9:ksc8d3rmv7@us-east-087.totallyacdn.com:443');
+const httpProxyAgent = new HttpsProxyAgent('https://e3z4acki-gv85bq9:ksc8d3rmv7@us-east-067.totallyacdn.com:443');
 
 const httpServer = http.createServer();
 
