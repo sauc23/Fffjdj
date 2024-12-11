@@ -1,5 +1,5 @@
 {
-  "name": "bare",//PLEASE SPEED I NEED THIS
+  "name": "bare",
   "type": "module",
   "version": "1.0.0",
   "main": "index.js",
