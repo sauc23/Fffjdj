@@ -1,16 +1,14 @@
 import http from 'node:http';
 import { createBareServer } from '@tomphttp/bare-server-node';
-import { SocksProxyAgent } from 'socks-proxy-agent';
+import { HttpsProxyAgent } from 'https-proxy-agent'; // Ensure correct import
 
-const socksProxyAgent = new SocksProxyAgent(
-	'socks5://67.201.35.145:4145',
-);
+const httpProxyAgent = new HttpsProxyAgent('https://e3z4acki-gv85bq9:ksc8d3rmv7@us-east-087.totallyacdn.com:443');
 
 const httpServer = http.createServer();
 
 const bareServer = createBareServer('/', {
-	httpAgent: socksProxyAgent,
-	httpsAgent: socksProxyAgent,
+	httpAgent: httpProxyAgent,
+	httpsAgent: httpProxyAgent,
 });
 
 httpServer.on('request', (req, res) => {
