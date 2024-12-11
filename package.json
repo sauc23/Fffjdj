@@ -1,5 +1,6 @@
 {
-  "name": "c",
+  "name": "bare",
+  "type": "module",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -11,6 +12,6 @@
   "description": "",
   "dependencies": {
     "@tomphttp/bare-server-node": "^2.0.5",
-    "socks-proxy-agent": "^8.0.5"
+    "https-proxy-agent": "^7.0.5"
   }
 }
