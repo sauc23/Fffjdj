@@ -3,7 +3,7 @@ import { createBareServer } from '@tomphttp/bare-server-node';
 import { SocksProxyAgent } from 'socks-proxy-agent';
 
 const socksProxyAgent = new SocksProxyAgent(
-	'socks://your-name@gmail.com:abcdef12345124@br41.nordvpn.com',
+	'socks5://T8bG2grGMDGQP447oBjrt2aF:SidnvUVLHdQn2d6oRhV9KH4w@us.socks.nordhold.net:1080',
 );
 
 const httpServer = http.createServer();
